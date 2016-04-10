@@ -8,6 +8,19 @@ body, html {
 	width: 100%;
 	height: 100%;
 }
+
+.shadow {
+	-webkit-box-shadow: 5px 5px 5px #aaa;
+ 	-moz-box-shadow: 5px 5px 5px #aaa;
+ 	box-shadow: 5px 5px 5px #aaa;
+ 	margin-bottom: 10px;
+}
+
+div.nav-bar ul{
+	z-index: 10;
+}
+
+
 /*-------------------------------*/
 
 /*--------NAV-BAR SETTING--------*/
@@ -45,15 +58,136 @@ div.page-content {
 	height: 100%;
 }
 
+div.members-container {
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+/*------------------------------*/
+
+
+/*-------------HOME-------------*/
 div#page1 {
 	background-color: #ccffff;
 }
+/*------------------------------*/
 
+
+/*-----------CONTENT------------*/
 div#page2 {
 	background-color: #ccffcc;
 }
+/*------------------------------*/
 
+
+/*-----------MEMBERS------------*/
 div#page3 {
 	background-color: #ffff99;
+	height: auto;
+}
+
+div#page3 h1 {
+}
+
+div#page3 div.members-container {
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+}
+
+div#page3 div.members-container div.member-container {
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	perspective: 1000px;
+
+	width: 300px;
+	height: 300px;
+
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+}
+
+div.member-container img {
+	width: 100%;
+	height: auto;
+}
+
+div#member1 {
+	/*
+	position: relative;
+
+	margin: 10px auto;
+
+	z-index: 1;
+	
+	width: 300px;
+	height: 300px;
+	*/
+
+}
+
+
+div.member-card {
+	width: 100%;
+	height: 100%;
+
+	-webkit-transition: all 1.0s linear;
+	-moz-transition: all 1.0s linear;
+	-o-transition: all 1.0s linear;
+	transition: all 1.0s linear;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+div.member-container:hover div.member-card{
+	box-shadow: -5px 5px 5px #aaa;
+
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.face.font {
+	background-color: #ffffff;
+}
+
+.face.back {
+	display: block;
+	padding: 10px;
+	color: #000000;
+	text-align: center;
+	background-color: #ffffff;
+
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*------------------------------*/
+
+
+/*---------CONTECT US-----------*/
+div#page4 {
+	background-color: #ffffff;
 }
 /*------------------------------*/

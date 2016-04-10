@@ -5,7 +5,6 @@ $('div.nav-bar > ul > li > a').on('click',function(){
 
 	var $top = $('div > a#' + $name).offset().top;
 
-	console.log(123);
 
 	$('html, body').animate(
 		{
