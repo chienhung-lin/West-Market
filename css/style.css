@@ -1,0 +1,59 @@
+/*-------DEFAULT SETTING--------*/
+/*
+	width, height will be inheirted by nested dom(ex:; div )
+*/
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/*-------------------------------*/
+
+/*--------NAV-BAR SETTING--------*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+/*------------------------------*/
+
+
+/*------EACH PAGE SETTING-------*/
+div.page-content {
+	height: 100%;
+}
+
+div#page1 {
+	background-color: #ccffff;
+}
+
+div#page2 {
+	background-color: #ccffcc;
+}
+
+div#page3 {
+	background-color: #ffff99;
+}
+/*------------------------------*/
