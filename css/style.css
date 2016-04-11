@@ -10,9 +10,9 @@ body, html {
 }
 
 .shadow {
-	-webkit-box-shadow: 5px 5px 5px #aaa;
- 	-moz-box-shadow: 5px 5px 5px #aaa;
- 	box-shadow: 5px 5px 5px #aaa;
+	-webkit-box-shadow: 5px 5px 5px #808080;
+ 	-moz-box-shadow: 5px 5px 5px #808080;
+ 	box-shadow: 5px 5px 5px	#808080;
  	margin-bottom: 10px;
 }
 
@@ -33,6 +33,23 @@ div.nav-bar ul{
 	background-color: #ffffff;
 }
 
+
+.big_font {
+	font-size: 90px;
+}
+
+.mid_font {
+	font-size: 72px;
+}
+
+.small_font {
+	font-size: 54px;
+}
+
+.title {
+	text-align: center;
+	margin: 0;
+}
 
 /*-------------------------------*/
 
@@ -80,7 +97,8 @@ div.border-container {
 
 /*-------------HOME-------------*/
 div#page1 {
-	background-color: #ffffff;	background-image: url("../img/home_bg.png");
+	background-color: #ffffff;
+	background-image: url("../img/home_bg.png");
 	height: 100%;
 	min-height: 480px;
 }
@@ -93,32 +111,54 @@ div#page1 div.overlayer-view {
 	padding-bottom: 20px;
 }
 
-h1.title {
-	color: #ffffff;
-	font-size: 90px;
-	text-align: center;
-	margin: 0;
-}
 /*------------------------------*/
 
 
 /*-----------CONTENT------------*/
 div#page2 {
-	background-color: #ccffcc;
+	background-color: #ffffff;
 	height: auto;
 	min-height: 100%;
+	background-repea:no-repeat;
 }
 
 div#page2 div.border-container {
 	margin: 0;
-	padding-left:10%;
-	padding-right:10%;
+	padding-top: 70px;
+	padding-left: 40px;
+	padding-right: 10%;
 	height: auto;
 	min-height: 100%;
 }
 
+div#page2 div.border-container div h1 {
+	display:inline-block;
+}
 
+div#page2 div.border-container div.picture-container {
+	width: 80%;
+	height: 100%;
+	min-height: 100%;
+	display: inline-block;
+	position: relative;
+}
 
+div#page2 div.border-container div.picture-container img {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+div#page2 div.border-container div.content-text {
+	width: 400px;
+	height: 100%;
+	min-height: 100%;
+	background-color: #aaa;
+	display: inline-block;
+	position: relative;
+	top:0;
+	right:0;
+}
 /*------------------------------*/
 
 
@@ -146,7 +186,7 @@ div#page3 div.members-container div.member-container {
 	height: 300px;
 
 	display: inline-block;
-	margin: 10px 10px 10px 10px;
+	margin: 35px;
 }
 
 div.member-container img {
@@ -170,7 +210,7 @@ div.member-card {
 }
 
 div.member-container:hover div.member-card{
-	box-shadow: -5px 5px 5px #aaa;
+	box-shadow: -5px 5px 5px #808080;
 
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);

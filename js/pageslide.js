@@ -14,5 +14,4 @@ $('div.nav-bar > ul > li > a').on('click',function(){
 			duration: 600
 		}
 	);
-
 });
