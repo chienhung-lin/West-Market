@@ -9,6 +9,10 @@ body, html {
 	height: 100%;
 }
 
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .shadow {
 	-webkit-box-shadow: 5px 5px 5px #808080;
  	-moz-box-shadow: 5px 5px 5px #808080;
@@ -97,16 +101,19 @@ div.border-container {
 
 /*-------------HOME-------------*/
 div#page1 {
-	background-color: #ffffff;
 	background-image: url("../img/home_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
 	height: 100%;
-	min-height: 480px;
+	width: auto;
 }
 
 
 div#page1 div.overlayer-view {
 	background-color: rgba(0,0,0,0.6);
 	height: 100%;
+	width: auto;
 	padding-top:290px;
 	padding-bottom: 20px;
 }
@@ -116,48 +123,32 @@ div#page1 div.overlayer-view {
 
 /*-----------CONTENT------------*/
 div#page2 {
-	background-color: #ffffff;
-	height: auto;
-	min-height: 100%;
-	background-repea:no-repeat;
-}
-
-div#page2 div.border-container {
-	margin: 0;
-	padding-top: 70px;
-	padding-left: 40px;
-	padding-right: 10%;
-	height: auto;
-	min-height: 100%;
-}
-
-div#page2 div.border-container div h1 {
-	display:inline-block;
-}
-
-div#page2 div.border-container div.picture-container {
-	width: 80%;
+	background-image: url("../img/slide4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
 	height: 100%;
-	min-height: 100%;
-	display: inline-block;
-	position: relative;
+	width: auto;
 }
 
-div#page2 div.border-container div.picture-container img {
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
+div#page2 div.border-container div.intro{
+	position:relative;
+	background-color: rgba(256,256,256,0.5);
+	height:auto;
+	width:25%;
+
+	left: 30px;
+	top: 50px;
+	padding: 10px;
 }
 
-div#page2 div.border-container div.content-text {
-	width: 400px;
-	height: 100%;
-	min-height: 100%;
-	background-color: #aaa;
-	display: inline-block;
-	position: relative;
-	top:0;
-	right:0;
+div.intro p, div.intro h3 {
+	padding: 0 10px;
+	font-size: 18px;
+}
+
+div.intro h2 {
+	text-align: center;
 }
 /*------------------------------*/
 
@@ -174,6 +165,10 @@ div#page3 div.members-container {
 	height: auto;
 
 	text-align: center;
+}
+
+div#page3 div.member-container p {
+	padding: 10px;
 }
 
 div#page3 div.members-container div.member-container {
