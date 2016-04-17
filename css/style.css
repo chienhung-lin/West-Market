@@ -114,8 +114,15 @@ div#page1 div.overlayer-view {
 	background-color: rgba(0,0,0,0.6);
 	height: 100%;
 	width: auto;
-	padding-top:290px;
-	padding-bottom: 20px;
+}
+
+h1.title.big_font.white-font {
+	position: absolute;
+	width: 480px;
+	height: 180px;
+	top: 50%;
+	left: 50%;
+	margin: -90px 0px 0px -240px;
 }
 
 /*------------------------------*/
@@ -123,7 +130,6 @@ div#page1 div.overlayer-view {
 
 /*-----------CONTENT------------*/
 div#page2 {
-	background-image: url("../img/slide4.png");
     background-repeat: no-repeat;
     background-position: center;
 	background-size: 100% 100%;
@@ -133,13 +139,14 @@ div#page2 {
 
 div#page2 div.border-container div.intro{
 	position:relative;
-	background-color: rgba(256,256,256,0.5);
+	background-color: rgba(0,0,0,0.3);
 	height:auto;
 	width:25%;
-
 	left: 30px;
 	top: 50px;
 	padding: 10px;
+
+	border-radius: 25px;
 }
 
 div.intro p, div.intro h3 {
@@ -155,8 +162,6 @@ div.intro h2 {
 
 /*-----------MEMBERS------------*/
 div#page3 {
-	background-image: url('../img/wooden_background.png');
-	height: auto;
 }
 
 
